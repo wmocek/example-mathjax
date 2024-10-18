@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="MathJax Tutorial - Manim Animation">
+    <meta name="author" content="Your Name">
+    <title>MathJax Example - Manim Animation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        header {
+            background-color: #336699;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #1a1a1a;
+        }
+
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+            transition: background-color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #575757;
+        }
+
+        article {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        video {
+            display: block;
+            margin: 20px auto;
+            max-width: 100%;
+        }
+    </style>
+    <!-- Load MathJax -->
+    <script>
+        window.MathJax = {
+            tex: { inlineMath: [['$', '$'], ['\\(', '\\)']] },
+            svg: { fontCache: 'global' }
+        };
+    </script>
+    <script type="text/javascript" id="MathJax-script" async 
+        src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+    </script>
+</head>
+<body>
+
+    <header>
+        <h1>Manim Animation Page</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="introduction.html">Introduction</a>
+        <a href="examples.html">Examples</a>
+        <a href="code.html">Code Example</a>
+        <a href="content.html">Your Content</a>
+    </nav>
+
+    <article>
+        <h2>Quadratic Formula Animation</h2>
+        <p>Here is an animation of the quadratic formula created with Manim:</p>
+        
+        <!-- Replace 'quadratic_formula.mp4' with your actual video filename -->
+        <video controls>
+            <source src="parabola2.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        
+        <p>Feel free to modify this page to include additional animations or explanations!</p>
+    </article>
+
+</body>
+</html>
