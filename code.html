@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="MathJax Tutorial - Code Examples">
+    <meta name="author" content="Your Name">
+    <title>MathJax Example - Code Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        header {
+            background-color: #336699;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #1a1a1a;
+        }
+
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+            transition: background-color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #575757;
+        }
+
+        article {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        code {
+            background-color: #eee;
+            padding: 2px 6px;
+            border-radius: 4px;
+        }
+
+        pre {
+            background-color: #333;
+            color: white;
+            padding: 15px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+    </style>
+    <!-- Load MathJax -->
+    <script>
+        window.MathJax = {
+            tex: { inlineMath: [['$', '$'], ['\\(', '\\)']] },
+            svg: { fontCache: 'global' }
+        };
+    </script>
+    <script type="text/javascript" id="MathJax-script" async 
+        src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+    </script>
+</head>
+<body>
+
+    <header>
+        <h1>MathJax Code Examples</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="introduction.html">Introduction</a>
+        <a href="examples.html">Examples</a>
+        <a href="content.html">Your Content</a>
+    </nav>
+
+    <article>
+        <h2>Code Examples for MathJax</h2>
+        <p>Here are some code snippets you can use with MathJax:</p>
+
+        <h3>Displaying the Quadratic Formula</h3>
+        <pre><code>
+            $$x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}$$
+        </code></pre>
+
+        <h3>Displaying an Integral</h3>
+        <pre><code>
+            $$\int_0^\infty e^{-x^2} dx = \frac{\sqrt{\pi}}{2}$$
+        </code></pre>
+
+        <h3>Displaying Euler's Formula</h3>
+        <pre><code>
+            $$e^{ix} = \cos(x) + i\sin(x)$$
+        </code></pre>
+    </article>
+
+</body>
+</html>
